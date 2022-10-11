@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body, html{
+    background-color: #8d99ae;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    overflow: hidden;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+    transform: translate(-50%,-50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+div#img{
+    background: #ef233c url(../imagens/notebook.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+div#form{
+    display: block;
+    padding: 10px;
+}
+div#form h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#form p{
+    font-size: 0.8em;
+}
+.campo{
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    display: block;
+}
+.campo label{
+    display: none;
+}
+.campo > i{
+    color: #2b2d42;
+    font-size: 1.5em;
+    width: 30px;
+    padding: 5px;
+}
+.campo > input{
+    font-size: 1em;
+    width: calc(100% - 40px);
+    height: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.campo > input:focus-within{
+    background-color: #dbdbdb83;
+}
+input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: calc(100% - 5px);
+    height: 40px;
+    background-color: #ef233c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: #a8021d;
+}
+.rec{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #2b2d42;
+}
+.rec:hover{
+    color: #36373f;
+}
